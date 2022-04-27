@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Cinzel&family=Merienda+One&family=Poppins:wght@200&family=Rubik:wght@300&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+header{
+	font-size: 40px;
+	text-align: center;
+	font-family: 'Cinzel', serif;
+}
+header span{
+	color: red;
+}
+.nav{
+	border: solid whitesmoke;
+	text-align: right;
+}
+.menu{
+	background-color: lightgreen;
+	font-family: 'Poppins', sans-serif;
+
+}
+.menu a{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	margin: 0 10px;
+  padding: 0 25px;
+  font-size: 30px;
+}
+.menu a:hover{
+		background-color: hotpink;
+	}
+
+span{
+	color: whitesmoke;
+}
+label{
+	margin: 0 40px 0 0;
+	font-size: 26px;
+	line-height: 70px;
+	width: 26px;
+	display: none;
+	float: right;
+}
+#toggle{
+	display: none;
+}
+article{
+	font-family: 'Rubik', sans-serif;
+}
+.user{
+	padding: 20px;
+	height: 100%;
+}
+.user input{
+	padding: 10px 10px;
+	margin: 6px;
+}
+.user button{
+	width: 90px;
+	height: 30px;
+	font-size: 1em;
+	margin-left: 8px;
+}
+.chart{
+	height: 100%;
+}
+.chart p{
+	padding: 20px;
+	float: right;
+	font-size: 1em;
+}
+.chart p span{
+	color: red;
+	font-weight: 300;
+
+}
+.chart img{
+	margin-left: 160px;
+}
+
+.chart button{
+	background-color: limegreen;
+	color: whitesmoke;
+	font-size: 1em;
+	width: 400px;
+}
+
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.problem{
+	width: 100%;
+	height: 400px;
+}
+.sel{
+	font-size: 20px;
+	text-align: right;
+  font-family: 'Poppins', sans-serif;
+  margin-top: -200px;
+  margin-right: 10px;
+}
+.sel input #c{
+	width: 200px;
+	color: black;
+	font-weight: bold;
+}
+
+
+.sel button{
+	background-color: #111;
+	color: whitesmoke;
+	font-size: 1em;
+	width: 400px;
+}
+
+.text{
+		padding: 10px;
+	}
+	.text .pic{
+     padding: 50px;
+     display: flex;
+     flex-direction: row;
+     background: whitesmoke;
+	}
+	text .pic h2{
+		color: black;
+	}
+	.text .pic img{
+		border-radius: 50%;
+	}
+
+.chat {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #333;
+  margin: auto;
+  padding-top: 4rem;
+}
+
+.app-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 80px;
+}
+
+svg {
+  width: 64px;
+  height: 64px;
+}
+
+.todo-list {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.todo-item {
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo-item span {
+  flex-grow: 1;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 22px;
+  color: black;
+}
+
+/* Styling for todo complete effect checked ( we gonna use this in javascript ) */
+.done span {
+  text-decoration: line-through;
+  user-select: none;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+input:focus {
+  outline: none;
+  background-color: #d4e7d5;
+}
+
+.tick {
+  width: 30px;
+  height: 30px;
+  border: 3px solid #333;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tick::before {
+  content: "✔️";
+  font-size: 20px;
+  display: none;
+}
+
+.done .tick::before {
+  display: inline;
+}
+
+/* Adding styling into delete todo button  */
+.delete-todo {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.delete-todo svg {
+  width: 30px;
+  height: 30px;
+  pointer-events: none;
+}
+
+/* Adding styling into add todo form */
+form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 3px solid #333;
+}
+
+/* Add this below all the other styles */
+
+.empty-state {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.checklist-icon {
+  margin-bottom: 20px;
+}
+
+.empty-state__title,
+.empty-state__description {
+  /* margin-bottom: 20px; */
+  font-size: 25px;
+  text-align: center;
+  margin: 2rem;
+  width: 25rem;
+}
+
+/* Add this below the other styles */
+.todo-list:empty {
+  display: none;
+}
+
+.todo-list:empty + .empty-state {
+  display: flex;
+}
+
+.problem h2{
+	text-align: center;
+	font-family: 'Rubik', sans-serif;
+}
+.text h2{
+	font-family: 'Rubik', sans-serif;
+}
+.about{
+	 text-align: center;
+}
+.about span{
+	color: blue;
+}
+
+.formselect .inputselect{
+	width: 300px;
+	height: 40px;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 430px){
+
+	html body{
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		overflow-x: hidden;
+	}
+header{
+	font-size: 20px;
+	text-align: center;
+	font-family: 'Cinzel', serif;
+}
+     label{
+		display: block;
+		cursor: pointer;
+		float: right;
+		background-color: whitesmoke;
+		padding: 0 10px;
+		margin-right: 1px;
+		font-size: 40px;
+	}
+	.menu{
+		text-align: center;
+	  width: auto;
+		display: none;
+		margin-top: 70px;
+	}
+	.menu a{
+		display: block;
+		color: black;
+		font-weight: 900;
+		background-color: lightgreen;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		border-bottom: 1px solid whitesmoke;
+		margin: 0;
+		margin-right: -30px;
+
+	}
+	.menu a:hover{
+		background-color: deeppink;
+	}
+	#toggle{
+		background-color: whitesmoke;
+
+	}
+
+	#toggle:checked + .menu{
+		display: block;
+		text-align: center;
+		background-color: whitesmoke;
+	}
+	article{
+	padding: 10px;
+}
+.chart img{
+	margin-left: 0;
+}
+
+.chart p{
+	padding-left: 20px;
+	border: solid;
+	margin: 0;
+
+}
+
+  .text{
+  	height: 1100px;
+  	display: flex;
+  	justify-content: center;
+  	border: none;
+  }
+.text .pic{
+     display: flex;
+     flex-direction: column;
+     background: whitesmoke;
+	}
+
+  .chat {
+    width: 90%;
+    margin: auto;
+  }
+  .app-title {
+    font-size: 3rem;
+  }
+  .empty-state__title,
+  .empty-state__description {
+    font-size: 1.5rem;
+    width: 18rem;
+  }
+  /*   .btn {
+position: absolute;
+right: -1rem;
+} */
+  em {
+    display: none;
+  }
+
+.problem .sel {
+	 font-weight: bolder;
+	 
+}
+
+
+  
+	}
+
